@@ -1,0 +1,1732 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh Bob | Early Access &ndash; Schrijf je in</title>
+  <meta name="description" content="Binnenkort beschikbaar: het versvoer dat honden laten watertanden. Schrijf je in voor early access.">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Fresh Bob | Early Access">
+  <meta property="og:description" content="Binnenkort beschikbaar. Schrijf je in en wees er als eerste bij!">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="nl_BE">
+
+  <!-- FAQ Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is Fresh Bob precies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Fresh Bob is gepersonaliseerd hondenvoer, vers bereid met 100% natuurlijke ingrediënten. Geen brokken uit een fabriek, maar echt eten – afgestemd op jouw hond."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wanneer kan ik bestellen?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We lanceren binnenkort! Schrijf je in voor early access en je bent als eerste op de hoogte zodra we live gaan."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Wat maakt jullie anders dan gewone brokken?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gewone brokken worden verhit op extreem hoge temperaturen, waardoor veel voedingsstoffen verloren gaan. Wij gebruiken een uniek gentle-dry proces dat de smaak en voedingswaarde behoudt – zonder koelkast."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe werkt de personalisatie?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Bij de lancering doorloop je een korte quiz over je hond – gewicht, leeftijd, activiteitsniveau en eventuele allergieën. Op basis daarvan stellen we het perfecte voedingsplan samen."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Hoe wordt het voer gemaakt?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ons voer wordt zacht gedroogd bij lage temperatuur om voedingsstoffen te behouden. Het is gemaakt met 100% natuurlijke ingrediënten – geen bewaarmiddelen, kunstmatige toevoegingen of suiker."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is dit ontwikkeld door experts?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Ja. Ons recept is samengesteld in samenwerking met dierenartsen en voedingsspecialisten. Veilig, voedzaam en perfect uitgebalanceerd, zelfs voor gevoelige honden."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://cdn.shopify.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* Brand Fonts from Shopify CDN */
+    @font-face {
+      font-family: 'KG Turning Tables';
+      src: url('https://cdn.shopify.com/s/files/1/0925/3879/8410/files/KGTurningTables.woff2?v=1746737132') format('woff2'),
+           url('https://cdn.shopify.com/s/files/1/0925/3879/8410/files/KGTurningTables.woff?v=1746736520') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+    @font-face {
+      font-family: 'Motter Corpus';
+      src: url('https://cdn.shopify.com/s/files/1/0925/3879/8410/files/Motter-Corpus-Std-Regular.woff?v=1746736520') format('woff');
+      font-weight: normal;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    /* ========================================
+       RESET & BASE
+       ======================================== */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      color: #212427;
+      background: #F5F9FC;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+
+    /* ========================================
+       BRAND VARIABLES
+       ======================================== */
+    :root {
+      --fb-primary-light-blue: #A9D9F4;
+      --fb-primary-dark-blue: #313565;
+      --fb-background-cream: #F5F9FC;
+      --fb-accent-orange: #FEA03C;
+      --fb-text-dark: #212427;
+      --fb-text-light: #718096;
+    }
+
+    /* ========================================
+       HEADING FONT (fallback for Motter Corpus)
+       ======================================== */
+    .fb-heading {
+      font-family: 'Motter Corpus', 'Inter', system-ui, sans-serif;
+      font-weight: 400;
+      text-transform: uppercase;
+      letter-spacing: -0.02em;
+      color: var(--fb-primary-dark-blue);
+    }
+
+    /* ========================================
+       PUSH BUTTON
+       ======================================== */
+    .push-btn {
+      display: inline-block;
+      text-decoration: none;
+      cursor: pointer;
+      border: none;
+      background: none;
+      padding: 0;
+    }
+    .push-btn__surface {
+      display: inline-block;
+      padding: 14px 32px;
+      background: var(--fb-accent-orange);
+      color: var(--fb-primary-dark-blue);
+      font-family: 'Inter', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      border-radius: 50px;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+      box-shadow: 0 4px 12px rgba(254, 160, 60, 0.35);
+    }
+    .push-btn:hover .push-btn__surface {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(254, 160, 60, 0.45);
+    }
+
+    /* ========================================
+       SECTION: HERO
+       ======================================== */
+    .fresh-hero {
+      position: relative;
+      width: 100%;
+      min-height: 80vh;
+      overflow: hidden;
+      background: linear-gradient(135deg, #F5F9FC 0%, #E3F0FA 100%);
+    }
+    .fresh-hero__container {
+      position: relative;
+      z-index: 3;
+      width: 100%;
+      min-height: 80vh;
+      display: flex;
+      align-items: center;
+      padding: 3rem 1.5rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .fresh-hero__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      align-items: center;
+    }
+    .fresh-hero__content { max-width: 550px; }
+    .fresh-hero__badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      margin-bottom: 1.25rem;
+      background: var(--fb-primary-light-blue);
+      color: var(--fb-primary-dark-blue);
+    }
+    .fresh-hero__title {
+      font-size: clamp(1.75rem, 5vw, 3rem);
+      line-height: 1.15;
+      margin-bottom: 0.75rem;
+    }
+    .fresh-hero__subtitle {
+      font-family: 'KG Turning Tables', cursive, sans-serif;
+      font-size: 1.2rem;
+      color: var(--fb-primary-dark-blue);
+      margin-bottom: 0.5rem;
+      font-weight: 400;
+    }
+    .fresh-hero__subtitle strong { color: var(--fb-accent-orange); }
+    .fresh-hero__body {
+      font-size: 1rem;
+      color: var(--fb-text-light);
+      margin-bottom: 1.75rem;
+      max-width: 450px;
+    }
+    .fresh-hero__usps {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+    .fresh-hero__usp {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.4rem 0.85rem;
+      background: #fff;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--fb-primary-dark-blue);
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .fresh-hero__usp svg { width: 16px; height: 16px; color: #10B981; }
+    .fresh-hero__image {
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 8px 30px rgba(49,53,101,0.12);
+      background: #e0eef7;
+      aspect-ratio: 4/3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--fb-text-light);
+      font-size: 0.9rem;
+    }
+
+    @media (min-width: 768px) {
+      .fresh-hero__grid { grid-template-columns: 1fr 1fr; }
+      .fresh-hero__container { padding: 4rem 2rem; }
+    }
+
+    /* ========================================
+       SECTION: USPs
+       ======================================== */
+    .fresh-usps {
+      padding: 4rem 1.5rem;
+    }
+    .fresh-usps__container { max-width: 1000px; margin: 0 auto; }
+    .fresh-usps__card {
+      background: #fff;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+    }
+    .fresh-usps__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0;
+    }
+    .fresh-usps__image {
+      overflow: hidden;
+      order: -1;
+      background: #e0eef7;
+      min-height: 250px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--fb-text-light);
+      font-size: 0.9rem;
+    }
+    .fresh-usps__content {
+      padding: 2rem 1.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    .fresh-usps__list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .fresh-usps__item {
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(49,53,101,0.1);
+    }
+    .fresh-usps__item:last-child {
+      padding-bottom: 0;
+      border-bottom: none;
+    }
+    .fresh-usps__item-title {
+      font-family: 'Inter', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: var(--fb-primary-dark-blue);
+      margin: 0 0 0.4rem 0;
+    }
+    .fresh-usps__item-text {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: var(--fb-text-light);
+      margin: 0;
+    }
+    @media (min-width: 768px) {
+      .fresh-usps { padding: 5rem 2rem; }
+      .fresh-usps__grid { grid-template-columns: 1fr 1fr; }
+      .fresh-usps__image { min-height: auto; order: 0; }
+      .fresh-usps__content { padding: 2.5rem 2rem; }
+    }
+
+    /* ========================================
+       SECTION: COMPARISON 2-COL
+       ======================================== */
+    .fresh-comparison {
+      padding: 4rem 1.5rem;
+    }
+    .fresh-comparison__container { max-width: 900px; margin: 0 auto; }
+    .fresh-comparison__header { text-align: center; margin-bottom: 2.5rem; }
+    .fresh-comparison__title {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      margin: 0 0 0.75rem 0;
+    }
+    .fresh-comparison__subtitle {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--fb-text-light);
+      margin: 0;
+    }
+    .fresh-comparison__table {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+    }
+    .fresh-comparison__columns {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .fresh-comparison__column-header {
+      padding: 1.25rem 1rem;
+      text-align: center;
+    }
+    .fresh-comparison__column-header--positive {
+      background: var(--fb-primary-dark-blue);
+      color: #fff;
+      border-right: 1px solid #E8ECF0;
+    }
+    .fresh-comparison__column-header--negative {
+      background: #F8F9FA;
+      color: var(--fb-primary-dark-blue);
+    }
+    .fresh-comparison__column-title {
+      font-size: 0.875rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin: 0;
+      color: inherit;
+    }
+    .fresh-comparison__column-header--positive .fresh-comparison__column-title { color: #fff !important; }
+    .fresh-comparison__rows { border-top: 1px solid #E8ECF0; }
+    .fresh-comparison__row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border-bottom: 1px solid #E8ECF0;
+    }
+    .fresh-comparison__row:last-child { border-bottom: none; }
+    .fresh-comparison__cell {
+      padding: 1rem 1.25rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+    }
+    .fresh-comparison__cell--positive {
+      background: #fff;
+      border-right: 1px solid #E8ECF0;
+    }
+    .fresh-comparison__cell--negative { background: #FAFBFC; }
+    .fresh-comparison__icon {
+      flex-shrink: 0;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+    .fresh-comparison__icon--check {
+      background: var(--fb-primary-light-blue);
+      color: var(--fb-primary-dark-blue);
+    }
+    .fresh-comparison__icon--cross {
+      background: #E8ECF0;
+      color: #9CA3AF;
+    }
+    .fresh-comparison__icon svg { width: 12px; height: 12px; }
+    .fresh-comparison__text {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: var(--fb-text-dark);
+    }
+    .fresh-comparison__cell--negative .fresh-comparison__text {
+      color: var(--fb-text-light);
+    }
+    @media (min-width: 768px) {
+      .fresh-comparison { padding: 5rem 2rem; }
+      .fresh-comparison__column-header { padding: 1.5rem 2rem; }
+      .fresh-comparison__column-title { font-size: 1rem; }
+      .fresh-comparison__cell { padding: 1.25rem 2rem; }
+    }
+    @media (max-width: 480px) {
+      .fresh-comparison__cell { padding: 0.875rem 1rem; }
+      .fresh-comparison__text { font-size: 0.8rem; }
+      .fresh-comparison__icon { width: 18px; height: 18px; }
+      .fresh-comparison__icon svg { width: 10px; height: 10px; }
+    }
+
+    /* ========================================
+       SECTION: COMPARISON 3-COL
+       ======================================== */
+    .fresh-comparison-3col {
+      padding: 4rem 1.5rem;
+    }
+    .fresh-comparison-3col__container { max-width: 1000px; margin: 0 auto; }
+    .fresh-comparison-3col__header { text-align: center; margin-bottom: 2.5rem; }
+    .fresh-comparison-3col__title {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      margin: 0 0 0.75rem 0;
+    }
+    .fresh-comparison-3col__subtitle {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--fb-text-light);
+      margin: 0;
+    }
+    .fresh-comparison-3col__table-wrapper {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .fresh-comparison-3col__table {
+      background: #fff;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.06);
+      min-width: 0;
+    }
+    .fresh-comparison-3col__columns {
+      display: grid;
+      grid-template-columns: minmax(120px, 1.2fr) repeat(3, 1fr);
+    }
+    .fresh-comparison-3col__column-header {
+      padding: 1.25rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .fresh-comparison-3col__column-header--label {
+      background: #fff;
+      border-right: 1px solid rgba(0,0,0,0.1);
+    }
+    .fresh-comparison-3col__column-header--negative {
+      background: rgba(0,0,0,0.03);
+      color: var(--fb-primary-dark-blue);
+      border-right: 1px solid rgba(0,0,0,0.1);
+    }
+    .fresh-comparison-3col__column-header--neutral {
+      background: rgba(0,0,0,0.05);
+      color: var(--fb-primary-dark-blue);
+      border-right: 1px solid rgba(0,0,0,0.1);
+    }
+    .fresh-comparison-3col__column-header--positive {
+      background: var(--fb-primary-dark-blue);
+      color: #fff;
+    }
+    .fresh-comparison-3col__column-title {
+      font-size: 0.85rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.02em;
+      margin: 0;
+    }
+    .fresh-comparison-3col__column-header--positive .fresh-comparison-3col__column-title { color: #fff !important; }
+    .fresh-comparison-3col__rows { border-top: 1px solid rgba(0,0,0,0.1); }
+    .fresh-comparison-3col__row {
+      display: grid;
+      grid-template-columns: minmax(120px, 1.2fr) repeat(3, 1fr);
+      border-bottom: 1px solid rgba(0,0,0,0.1);
+    }
+    .fresh-comparison-3col__row:last-child { border-bottom: none; }
+    .fresh-comparison-3col__cell {
+      padding: 0.875rem 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 0.5rem;
+      text-align: left;
+      border-right: 1px solid rgba(0,0,0,0.1);
+    }
+    .fresh-comparison-3col__cell:last-child { border-right: none; }
+    .fresh-comparison-3col__cell--label { background: #fff; font-weight: 500; }
+    .fresh-comparison-3col__cell--negative { background: rgba(0,0,0,0.02); }
+    .fresh-comparison-3col__cell--neutral { background: rgba(0,0,0,0.03); }
+    .fresh-comparison-3col__cell--positive { background: rgba(169,217,244,0.15); }
+    .fresh-comparison-3col__icon {
+      flex-shrink: 0;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .fresh-comparison-3col__icon--check { background: #10B981; color: #fff; }
+    .fresh-comparison-3col__icon--warning { background: #F59E0B; color: #fff; }
+    .fresh-comparison-3col__icon--cross { background: #EF4444; color: #fff; }
+    .fresh-comparison-3col__icon svg { width: 12px; height: 12px; }
+    .fresh-comparison-3col__text {
+      font-size: 0.8rem;
+      line-height: 1.4;
+      color: var(--fb-text-dark);
+    }
+    .fresh-comparison-3col__cell--positive .fresh-comparison-3col__text {
+      font-weight: 600;
+      color: var(--fb-primary-dark-blue);
+    }
+    .fresh-comparison-3col__cell--label .fresh-comparison-3col__text {
+      font-weight: 500;
+      color: var(--fb-primary-dark-blue);
+    }
+    @media (min-width: 768px) {
+      .fresh-comparison-3col { padding: 5rem 2rem; }
+      .fresh-comparison-3col__column-header { padding: 1.5rem 1.25rem; }
+      .fresh-comparison-3col__column-title { font-size: 0.95rem; }
+      .fresh-comparison-3col__cell { padding: 1rem 1.25rem; }
+      .fresh-comparison-3col__text { font-size: 0.875rem; }
+    }
+    @media (max-width: 768px) {
+      .fresh-comparison-3col__columns,
+      .fresh-comparison-3col__row { grid-template-columns: minmax(70px, 0.9fr) repeat(3, 1fr); }
+      .fresh-comparison-3col__column-header { padding: 0.6rem 0.3rem; }
+      .fresh-comparison-3col__column-title { font-size: 0.6rem; letter-spacing: 0.01em; }
+      .fresh-comparison-3col__cell { padding: 0.45rem 0.3rem; flex-direction: column; gap: 0.15rem; }
+      .fresh-comparison-3col__text { font-size: 0.55rem; line-height: 1.3; }
+      .fresh-comparison-3col__icon { width: 14px; height: 14px; }
+      .fresh-comparison-3col__icon svg { width: 8px; height: 8px; }
+    }
+
+    /* ========================================
+       SECTION: TASTE TEST / SOCIAL PROOF
+       ======================================== */
+    .fresh-taste-test {
+      padding: 3.5rem 1.5rem;
+    }
+    .fresh-taste-test__container { max-width: 1100px; margin: 0 auto; }
+    .fresh-taste-test__header { text-align: center; margin-bottom: 2rem; }
+    .fresh-taste-test__title {
+      font-size: clamp(1.6rem, 4vw, 2.25rem);
+      line-height: 1.25;
+      margin: 0 0 0.75rem 0;
+    }
+    .fresh-taste-test__subtitle {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--fb-text-light);
+      margin: 0 auto;
+      max-width: 600px;
+    }
+    .fresh-taste-test__counter {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
+    }
+    .fresh-taste-test__stat {
+      text-align: center;
+      background: #fff;
+      padding: 1.25rem 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(49,53,101,0.08);
+    }
+    .fresh-taste-test__stat-number {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 800;
+      color: var(--fb-accent-orange);
+      line-height: 1;
+      margin-bottom: 0.25rem;
+    }
+    .fresh-taste-test__stat-label {
+      font-size: 0.875rem;
+      color: var(--fb-primary-dark-blue);
+      opacity: 0.8;
+    }
+    .fresh-taste-test__videos {
+      display: flex;
+      gap: 1rem;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+      padding-bottom: 0.5rem;
+      scrollbar-width: none;
+    }
+    .fresh-taste-test__videos::-webkit-scrollbar { display: none; }
+    .fresh-taste-test__video-item {
+      border-radius: 16px;
+      overflow: hidden;
+      flex-shrink: 0;
+      width: 250px;
+      scroll-snap-align: start;
+      background: #e0eef7;
+      aspect-ratio: 9/16;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--fb-text-light);
+      font-size: 0.8rem;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    /* ========================================
+       SECTION: FRESH-DRY PROCESS
+       ======================================== */
+    .fresh-dry-process {
+      padding: 4rem 1.5rem;
+    }
+    .fresh-dry-process__container { max-width: 1100px; margin: 0 auto; }
+    .fresh-dry-process__header { text-align: center; margin-bottom: 3rem; }
+    .fresh-dry-process__badge {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      margin-bottom: 1rem;
+      background: var(--fb-primary-light-blue);
+      color: var(--fb-primary-dark-blue);
+    }
+    .fresh-dry-process__title {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      margin: 0 0 1rem 0;
+    }
+    .fresh-dry-process__subtitle {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--fb-text-light);
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .fresh-dry-process__grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.5rem;
+    }
+    .fresh-dry-process__step { text-align: center; }
+    .fresh-dry-process__image {
+      width: 100%;
+      aspect-ratio: 1/1;
+      margin: 0 auto 1rem;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      background: #e0eef7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--fb-text-light);
+      font-size: 0.8rem;
+    }
+    .fresh-dry-process__step-title {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--fb-primary-dark-blue);
+      margin-bottom: 0.25rem;
+    }
+    .fresh-dry-process__step-text {
+      font-size: 0.85rem;
+      line-height: 1.5;
+      color: var(--fb-text-light);
+    }
+    @media (min-width: 768px) {
+      .fresh-dry-process { padding: 5rem 2rem; }
+      .fresh-dry-process__grid { grid-template-columns: repeat(4, 1fr); }
+    }
+
+    /* ========================================
+       SECTION: EXPERTS
+       ======================================== */
+    .fresh-experts {
+      padding: 4rem 1.5rem;
+    }
+    .fresh-experts__container { max-width: 1000px; margin: 0 auto; }
+    .fresh-experts__header { text-align: center; margin-bottom: 3rem; }
+    .fresh-experts__title {
+      font-size: clamp(1.75rem, 4vw, 2.25rem);
+      margin: 0 0 0.75rem 0;
+    }
+    .fresh-experts__subtitle {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--fb-text-light);
+      margin: 0 auto;
+      max-width: 500px;
+    }
+    .fresh-experts__grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2.5rem;
+    }
+    .fresh-experts__card { text-align: center; }
+    .fresh-experts__image-wrap {
+      width: 140px;
+      height: 140px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 auto 1.25rem;
+      box-shadow: 0 4px 20px rgba(49,53,101,0.1);
+      background: #e0eef7;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--fb-text-light);
+      font-size: 0.75rem;
+    }
+    .fresh-experts__name {
+      font-size: 1.125rem;
+      font-weight: 600;
+      color: var(--fb-primary-dark-blue);
+      margin: 0 0 0.25rem 0;
+    }
+    .fresh-experts__role {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--fb-accent-orange);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+      margin: 0 0 0.75rem 0;
+    }
+    .fresh-experts__bio {
+      font-size: 0.9rem;
+      line-height: 1.6;
+      color: var(--fb-text-light);
+      margin: 0 auto;
+      max-width: 280px;
+    }
+    @media (min-width: 768px) {
+      .fresh-experts { padding: 5rem 2rem; }
+      .fresh-experts__grid { grid-template-columns: repeat(3, 1fr); }
+    }
+
+    /* ========================================
+       SECTION: CTA BLOCK
+       ======================================== */
+    .fresh-quiz-cta {
+      padding: 0 1.5rem 4rem 1.5rem;
+      margin-top: 60px;
+      background: var(--fb-primary-light-blue);
+    }
+    .fresh-quiz-cta__container {
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .fresh-quiz-cta__image-wrapper {
+      margin-top: -60px;
+      margin-bottom: 1.5rem;
+    }
+    .fresh-quiz-cta__image-wrapper img {
+      max-width: 550px;
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+      display: block;
+    }
+    .fresh-quiz-cta__title {
+      font-size: clamp(1.5rem, 4vw, 2rem);
+      line-height: 1.25;
+      margin: 0 0 0.75rem 0;
+    }
+    .fresh-quiz-cta__subtitle {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--fb-primary-dark-blue);
+      opacity: 0.8;
+      margin: 0 0 1.5rem 0;
+      max-width: 500px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .fresh-quiz-cta__checks {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 2rem 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      align-items: center;
+    }
+    .fresh-quiz-cta__check {
+      font-size: 0.95rem;
+      color: var(--fb-primary-dark-blue);
+    }
+    .fresh-quiz-cta__form {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      max-width: 420px;
+      margin: 0 auto;
+    }
+    .fresh-quiz-cta__input-wrapper {
+      position: relative;
+    }
+    .fresh-quiz-cta__input {
+      width: 100%;
+      padding: 14px 18px;
+      font-family: var(--fb-font-body, 'Inter', sans-serif);
+      font-size: 1rem;
+      border: 2px solid rgba(49,53,101,0.15);
+      border-radius: 12px;
+      background: #fff;
+      color: var(--fb-primary-dark-blue);
+      outline: none;
+      transition: border-color 0.2s ease;
+      box-sizing: border-box;
+    }
+    .fresh-quiz-cta__input:focus {
+      border-color: var(--fb-accent-orange);
+    }
+    .fresh-quiz-cta__input::placeholder {
+      color: var(--fb-text-light);
+      opacity: 0.6;
+    }
+    .fresh-quiz-cta__error {
+      font-size: 0.85rem;
+      color: #E53E3E;
+      text-align: left;
+      display: none;
+    }
+    .fresh-quiz-cta__success {
+      display: none;
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+    .fresh-quiz-cta__success-icon {
+      font-size: 2.5rem;
+      margin-bottom: 0.75rem;
+    }
+    .fresh-quiz-cta__success-title {
+      font-family: 'KG Turning Tables', sans-serif;
+      font-size: 1.25rem;
+      color: var(--fb-primary-dark-blue);
+      margin: 0 0 0.5rem 0;
+    }
+    .fresh-quiz-cta__success-text {
+      font-size: 0.95rem;
+      color: var(--fb-primary-dark-blue);
+      opacity: 0.8;
+      margin: 0;
+    }
+    @media (min-width: 768px) {
+      .fresh-quiz-cta { padding: 0 2rem 5rem 2rem; margin-top: 100px; }
+      .fresh-quiz-cta__image-wrapper { margin-top: -100px; margin-bottom: 2rem; }
+    }
+
+    /* ========================================
+       SECTION: FAQ
+       ======================================== */
+    .fresh-faq {
+      padding: 4rem 1.5rem;
+    }
+    .fresh-faq__container { max-width: 800px; margin: 0 auto; }
+    .fresh-faq__header { text-align: center; margin-bottom: 2.5rem; }
+    .fresh-faq__title {
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      line-height: 1.25;
+      margin: 0 0 0.75rem 0;
+    }
+    .fresh-faq__subtitle {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--fb-text-light);
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .fresh-faq__list {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.5rem;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .fresh-faq__item {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      overflow: hidden;
+    }
+    .fresh-faq__question {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.875rem 1rem;
+      background: none;
+      border: none;
+      cursor: pointer;
+      text-align: left;
+      font-family: 'Inter', sans-serif;
+      font-size: 0.875rem;
+      font-weight: 600;
+      color: var(--fb-primary-dark-blue);
+      line-height: 1.4;
+    }
+    .fresh-faq__question:hover {
+      background-color: rgba(169,217,244,0.1);
+    }
+    .fresh-faq__chevron {
+      flex-shrink: 0;
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease;
+    }
+    .fresh-faq__chevron svg {
+      width: 16px;
+      height: 16px;
+      color: var(--fb-primary-dark-blue);
+    }
+    .fresh-faq__item.is-open .fresh-faq__chevron {
+      transform: rotate(180deg);
+    }
+    .fresh-faq__answer {
+      display: none;
+      padding: 0 1rem 1rem;
+      font-size: 0.875rem;
+      line-height: 1.6;
+      color: var(--fb-text-light);
+    }
+    .fresh-faq__item.is-open .fresh-faq__answer {
+      display: block;
+    }
+    @media (min-width: 768px) {
+      .fresh-faq { padding: 5rem 2rem; }
+      .fresh-faq__list { grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+      .fresh-faq__question { padding: 1rem 1.25rem; font-size: 0.95rem; }
+      .fresh-faq__answer { padding: 0 1.25rem 1.25rem; font-size: 0.9rem; }
+    }
+
+    /* ========================================
+       FLOATING BUTTON
+       ======================================== */
+    .floating-button-container {
+      position: fixed;
+      bottom: 20px;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      display: flex;
+      justify-content: center;
+      pointer-events: none;
+      padding: 0 20px;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+    .floating-button-container.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+    .floating-button-container .push-btn {
+      pointer-events: auto;
+      min-width: 200px;
+    }
+    .floating-button-container .push-btn__surface {
+      box-shadow: 0 4px 15px rgba(254,160,60,0.4);
+      padding: 12px 28px !important;
+      font-size: 0.85rem;
+    }
+    @media (max-width: 768px) {
+      .floating-button-container {
+        bottom: 10px;
+        padding: 0 15px;
+      }
+      .floating-button-container .push-btn { width: 100%; }
+      .floating-button-container .push-btn__surface { width: 100%; text-align: center; }
+      /* Extra padding aan body onderaan voor sticky button */
+      body { padding-bottom: 80px; }
+    }
+
+    /* ========================================
+       UTILITIES
+       ======================================== */
+    .section-divider {
+      width: 60px;
+      height: 3px;
+      background: var(--fb-accent-orange);
+      border-radius: 2px;
+      margin: 0 auto 1rem;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================
+       HERO SECTION
+       ========================================== -->
+  <section class="fresh-hero" id="hero">
+    <div class="fresh-hero__container">
+      <div class="fresh-hero__grid">
+        <div class="fresh-hero__content">
+          <span class="fresh-hero__badge">Binnenkort beschikbaar</span>
+          <h1 class="fb-heading fresh-hero__title">De voeding waar honden alles voor laten staan!</h1>
+          <p class="fresh-hero__subtitle">Binnenkort beschikbaar. Aanbevolen door <strong id="influencerName">Fresh Bob</strong>.</p>
+          <p class="fresh-hero__body">Wees er als eerste bij. Laat je e-mail achter en krijg exclusieve toegang zodra we lanceren.</p>
+          <a href="#aanvragen" class="push-btn">
+            <span class="push-btn__surface">Schrijf je in voor early access</span>
+          </a>
+          <div class="fresh-hero__usps">
+            <span class="fresh-hero__usp">
+              <svg viewBox="0 0 16 16" fill="none"><path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Vers
+            </span>
+            <span class="fresh-hero__usp">
+              <svg viewBox="0 0 16 16" fill="none"><path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Zonder koelkast
+            </span>
+            <span class="fresh-hero__usp">
+              <svg viewBox="0 0 16 16" fill="none"><path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Op maat
+            </span>
+            <span class="fresh-hero__usp">
+              <svg viewBox="0 0 16 16" fill="none"><path d="M2 8L6 12L14 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              Natuurlijk
+            </span>
+          </div>
+        </div>
+        <div class="fresh-hero__image">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0925/3879/8410/files/u5827277575_professional_overhead_flatlay_photograph_shot_on_Ca_91c70b43-abda-4bd8-8279-42a1c66b941f.png"
+            alt="Fresh Bob versvoer flatlay"
+            loading="eager"
+            style="width:100%;height:100%;object-fit:cover;"
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       USP SECTION
+       ========================================== -->
+  <section class="fresh-usps" id="usps">
+    <div class="fresh-usps__container">
+      <div class="fresh-usps__card">
+        <div class="fresh-usps__grid">
+          <div class="fresh-usps__image">
+            <img
+              src="product-bowl.webp"
+              alt="Fresh Bob knappervers voer in kom"
+              loading="lazy"
+              style="width:100%;height:100%;object-fit:cover;"
+            >
+          </div>
+          <div class="fresh-usps__content">
+            <ul class="fresh-usps__list">
+              <li class="fresh-usps__item">
+                <h3 class="fresh-usps__item-title">Vers zonder koelkast</h3>
+                <p class="fresh-usps__item-text">Dankzij ons uniek Fresh-Dry proces bewaar je het voer gewoon in de kast. Vers bereid, lang houdbaar.</p>
+              </li>
+              <li class="fresh-usps__item">
+                <h3 class="fresh-usps__item-title">Op maat van jouw unieke hond</h3>
+                <p class="fresh-usps__item-text">Elk voedingsplan wordt afgestemd op het ras, gewicht, leeftijd en activiteitsniveau van jouw hond.</p>
+              </li>
+              <li class="fresh-usps__item">
+                <h3 class="fresh-usps__item-title">Voedzaam & uitgebalanceerd</h3>
+                <p class="fresh-usps__item-text">Samengesteld met dierenartsen. 100% natuurlijke ingredienten, geen vullers of kunstmatige toevoegingen.</p>
+              </li>
+              <li class="fresh-usps__item">
+                <h3 class="fresh-usps__item-title">Gezond voer dat je hond doet watertanden</h3>
+                <p class="fresh-usps__item-text">97% van de honden verkiest Fresh Bob boven hun huidige voeding. De smaaktest liegt niet.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       KNAPPERVERS VS BROKKEN (2-COL)
+       ========================================== -->
+  <section class="fresh-comparison" id="vergelijking">
+    <div class="fresh-comparison__container">
+      <div class="fresh-comparison__header">
+        <h2 class="fb-heading fresh-comparison__title">Knappervers vs. Brokken</h2>
+        <p class="fresh-comparison__subtitle">Er is eigenlijk geen vergelijking, maar we geven ze toch.</p>
+      </div>
+      <div class="fresh-comparison__table">
+        <div class="fresh-comparison__columns">
+          <div class="fresh-comparison__column-header fresh-comparison__column-header--positive">
+            <h3 class="fresh-comparison__column-title">Knappervers</h3>
+          </div>
+          <div class="fresh-comparison__column-header fresh-comparison__column-header--negative">
+            <h3 class="fresh-comparison__column-title">Brokken</h3>
+          </div>
+        </div>
+        <div class="fresh-comparison__rows">
+          <div class="fresh-comparison__row">
+            <div class="fresh-comparison__cell fresh-comparison__cell--positive">
+              <span class="fresh-comparison__icon fresh-comparison__icon--check">
+                <svg viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="fresh-comparison__text">Verse, volledige ingredienten</span>
+            </div>
+            <div class="fresh-comparison__cell fresh-comparison__cell--negative">
+              <span class="fresh-comparison__icon fresh-comparison__icon--cross">
+                <svg viewBox="0 0 12 12" fill="none"><path d="M3 3L9 9M9 3L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="fresh-comparison__text">Diervoeder-geschikte ingredienten</span>
+            </div>
+          </div>
+          <div class="fresh-comparison__row">
+            <div class="fresh-comparison__cell fresh-comparison__cell--positive">
+              <span class="fresh-comparison__icon fresh-comparison__icon--check">
+                <svg viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="fresh-comparison__text">Alleen echt vlees, 80%</span>
+            </div>
+            <div class="fresh-comparison__cell fresh-comparison__cell--negative">
+              <span class="fresh-comparison__icon fresh-comparison__icon--cross">
+                <svg viewBox="0 0 12 12" fill="none"><path d="M3 3L9 9M9 3L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="fresh-comparison__text">Poedervormige vleesmeel</span>
+            </div>
+          </div>
+          <div class="fresh-comparison__row">
+            <div class="fresh-comparison__cell fresh-comparison__cell--positive">
+              <span class="fresh-comparison__icon fresh-comparison__icon--check">
+                <svg viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="fresh-comparison__text">Geen kunstmatige toevoegingen</span>
+            </div>
+            <div class="fresh-comparison__cell fresh-comparison__cell--negative">
+              <span class="fresh-comparison__icon fresh-comparison__icon--cross">
+                <svg viewBox="0 0 12 12" fill="none"><path d="M3 3L9 9M9 3L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="fresh-comparison__text">Vullers en toevoegingen</span>
+            </div>
+          </div>
+          <div class="fresh-comparison__row">
+            <div class="fresh-comparison__cell fresh-comparison__cell--positive">
+              <span class="fresh-comparison__icon fresh-comparison__icon--check">
+                <svg viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="fresh-comparison__text">Zacht gedroogd op lage temperatuur</span>
+            </div>
+            <div class="fresh-comparison__cell fresh-comparison__cell--negative">
+              <span class="fresh-comparison__icon fresh-comparison__icon--cross">
+                <svg viewBox="0 0 12 12" fill="none"><path d="M3 3L9 9M9 3L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="fresh-comparison__text">Geextrudeerd op hoge temperatuur</span>
+            </div>
+          </div>
+          <div class="fresh-comparison__row">
+            <div class="fresh-comparison__cell fresh-comparison__cell--positive">
+              <span class="fresh-comparison__icon fresh-comparison__icon--check">
+                <svg viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="fresh-comparison__text">Persoonlijke plannen en maatbekers</span>
+            </div>
+            <div class="fresh-comparison__cell fresh-comparison__cell--negative">
+              <span class="fresh-comparison__icon fresh-comparison__icon--cross">
+                <svg viewBox="0 0 12 12" fill="none"><path d="M3 3L9 9M9 3L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+              <span class="fresh-comparison__text">Verwarrende voedingsrichtlijnen</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       VERGELIJK JE OPTIES (3-COL)
+       ========================================== -->
+  <section class="fresh-comparison-3col" id="vergelijk-opties">
+    <div class="fresh-comparison-3col__container">
+      <div class="fresh-comparison-3col__header">
+        <h2 class="fb-heading fresh-comparison-3col__title">Vergelijk je opties</h2>
+        <p class="fresh-comparison-3col__subtitle">Ontdek waarom Knappervers de beste keuze is.</p>
+      </div>
+      <div class="fresh-comparison-3col__table-wrapper">
+        <div class="fresh-comparison-3col__table">
+          <div class="fresh-comparison-3col__columns">
+            <div class="fresh-comparison-3col__column-header fresh-comparison-3col__column-header--label">
+              <h3 class="fresh-comparison-3col__column-title"></h3>
+            </div>
+            <div class="fresh-comparison-3col__column-header fresh-comparison-3col__column-header--negative">
+              <h3 class="fresh-comparison-3col__column-title">Brokken</h3>
+            </div>
+            <div class="fresh-comparison-3col__column-header fresh-comparison-3col__column-header--neutral">
+              <h3 class="fresh-comparison-3col__column-title">Vers/BARF</h3>
+            </div>
+            <div class="fresh-comparison-3col__column-header fresh-comparison-3col__column-header--positive">
+              <h3 class="fresh-comparison-3col__column-title">Knappervers</h3>
+            </div>
+          </div>
+          <div class="fresh-comparison-3col__rows">
+            <!-- Row 1 -->
+            <div class="fresh-comparison-3col__row">
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--label"><span class="fresh-comparison-3col__text">Onweerstaanbare smaak</span></div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--negative">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--cross"><svg viewBox="0 0 12 12" fill="none"><path d="M3 3L9 9M9 3L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Saaie smaak</span>
+              </div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--neutral">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--warning"><svg viewBox="0 0 12 12" fill="none"><path d="M6 3V7M6 9V9.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Wisselend</span>
+              </div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--positive">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">97% smult!</span>
+              </div>
+            </div>
+            <!-- Row 2 -->
+            <div class="fresh-comparison-3col__row">
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--label"><span class="fresh-comparison-3col__text">Verse ingredienten</span></div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--negative">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--cross"><svg viewBox="0 0 12 12" fill="none"><path d="M3 3L9 9M9 3L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Poeder</span>
+              </div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--neutral">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Ja</span>
+              </div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--positive">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Ja</span>
+              </div>
+            </div>
+            <!-- Row 3 -->
+            <div class="fresh-comparison-3col__row">
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--label"><span class="fresh-comparison-3col__text">Voedingsstoffen</span></div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--negative">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--warning"><svg viewBox="0 0 12 12" fill="none"><path d="M6 3V7M6 9V9.01" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Verlies</span>
+              </div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--neutral">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Ja</span>
+              </div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--positive">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Ja</span>
+              </div>
+            </div>
+            <!-- Row 4 -->
+            <div class="fresh-comparison-3col__row">
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--label"><span class="fresh-comparison-3col__text">Geen koeling nodig</span></div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--negative">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Ja</span>
+              </div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--neutral">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--cross"><svg viewBox="0 0 12 12" fill="none"><path d="M3 3L9 9M9 3L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Diepvries</span>
+              </div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--positive">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Ja</span>
+              </div>
+            </div>
+            <!-- Row 5 -->
+            <div class="fresh-comparison-3col__row">
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--label"><span class="fresh-comparison-3col__text">Lang houdbaar</span></div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--negative">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Ja</span>
+              </div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--neutral">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--cross"><svg viewBox="0 0 12 12" fill="none"><path d="M3 3L9 9M9 3L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Nee</span>
+              </div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--positive">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Ja</span>
+              </div>
+            </div>
+            <!-- Row 6 -->
+            <div class="fresh-comparison-3col__row">
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--label"><span class="fresh-comparison-3col__text">Betaalbaar</span></div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--negative">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Ja</span>
+              </div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--neutral">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--cross"><svg viewBox="0 0 12 12" fill="none"><path d="M3 3L9 9M9 3L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Duur</span>
+              </div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--positive">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Ja</span>
+              </div>
+            </div>
+            <!-- Row 7 -->
+            <div class="fresh-comparison-3col__row">
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--label"><span class="fresh-comparison-3col__text">Gepersonaliseerd</span></div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--negative">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--cross"><svg viewBox="0 0 12 12" fill="none"><path d="M3 3L9 9M9 3L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Nee</span>
+              </div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--neutral">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--cross"><svg viewBox="0 0 12 12" fill="none"><path d="M3 3L9 9M9 3L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Nee</span>
+              </div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--positive">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Ja</span>
+              </div>
+            </div>
+            <!-- Row 8 -->
+            <div class="fresh-comparison-3col__row">
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--label"><span class="fresh-comparison-3col__text">Smaakgarantie</span></div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--negative">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--cross"><svg viewBox="0 0 12 12" fill="none"><path d="M3 3L9 9M9 3L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Nee</span>
+              </div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--neutral">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--cross"><svg viewBox="0 0 12 12" fill="none"><path d="M3 3L9 9M9 3L3 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Nee</span>
+              </div>
+              <div class="fresh-comparison-3col__cell fresh-comparison-3col__cell--positive">
+                <span class="fresh-comparison-3col__icon fresh-comparison-3col__icon--check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6L5 9L10 3" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <span class="fresh-comparison-3col__text">Ja!</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       SMAAKTEST / SOCIAL PROOF
+       ========================================== -->
+  <section class="fresh-taste-test" id="smaaktest">
+    <div class="fresh-taste-test__container">
+      <div class="fresh-taste-test__header">
+        <h2 class="fb-heading fresh-taste-test__title">Smaaktest: Ons voer vs andere</h2>
+        <p class="fresh-taste-test__subtitle">Ons voer werd getest bij hondenliefhebbers. Dit zijn de resultaten.</p>
+      </div>
+      <div class="fresh-taste-test__counter">
+        <div class="fresh-taste-test__stat">
+          <div class="fresh-taste-test__stat-number">97%</div>
+          <div class="fresh-taste-test__stat-label">kiest Knappervers</div>
+        </div>
+        <div class="fresh-taste-test__stat">
+          <div class="fresh-taste-test__stat-number">50+</div>
+          <div class="fresh-taste-test__stat-label">honden getest</div>
+        </div>
+        <div class="fresh-taste-test__stat">
+          <div class="fresh-taste-test__stat-number">4.9/5</div>
+          <div class="fresh-taste-test__stat-label">beoordeling</div>
+        </div>
+      </div>
+      <div class="fresh-taste-test__videos">
+        <div class="fresh-taste-test__video-item">
+          <video src="https://cdn.shopify.com/videos/c/o/v/00ee5f6ac45443fa81e653131ef42be5.mp4" playsinline muted loop preload="metadata" style="width:100%;height:100%;object-fit:cover;"></video>
+        </div>
+        <div class="fresh-taste-test__video-item">
+          <video src="https://cdn.shopify.com/videos/c/o/v/cc0f207db09d439d884cb760f288f81e.mp4" playsinline muted loop preload="metadata" style="width:100%;height:100%;object-fit:cover;"></video>
+        </div>
+        <div class="fresh-taste-test__video-item">
+          <video src="https://cdn.shopify.com/videos/c/o/v/89a7c45c98e74bf0bf903019a73d5bf0.mp4" playsinline muted loop preload="metadata" style="width:100%;height:100%;object-fit:cover;"></video>
+        </div>
+        <div class="fresh-taste-test__video-item">
+          <video src="https://cdn.shopify.com/videos/c/o/v/a8268a4ce06243e9959614ecdd174383.mp4" playsinline muted loop preload="metadata" style="width:100%;height:100%;object-fit:cover;"></video>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FRESH-DRY PROCESS
+       ========================================== -->
+  <section class="fresh-dry-process" id="proces">
+    <div class="fresh-dry-process__container">
+      <div class="fresh-dry-process__header">
+        <span class="fresh-dry-process__badge">Onze methode</span>
+        <h2 class="fb-heading fresh-dry-process__title">Waarom Fresh-Dry&trade; beter is</h2>
+        <p class="fresh-dry-process__subtitle">Bij Fresh Bob geloven we in voeding die zo dicht mogelijk bij de natuur blijft. Daarom gebruiken wij het Fresh-Dry proces &ndash; een zachte, langzame manier van drogen die de voedingswaarde behoudt.</p>
+      </div>
+      <div class="fresh-dry-process__grid">
+        <div class="fresh-dry-process__step">
+          <div class="fresh-dry-process__image"><img src="https://cdn.shopify.com/s/files/1/0925/3879/8410/files/u6966522792_a_flat_lay_of_fresh_dog_food_ingredients_on_a_woo_9002a7db-5903-4d0f-bdd5-f83d74025096_1.png" alt="Verse ingredienten" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+          <h3 class="fresh-dry-process__step-title">Verse ingredienten</h3>
+          <p class="fresh-dry-process__step-text">We starten met hoogwaardige, verse ingredienten zoals echt vlees, groenten en superfoods.</p>
+        </div>
+        <div class="fresh-dry-process__step">
+          <div class="fresh-dry-process__image"><img src="https://cdn.shopify.com/s/files/1/0925/3879/8410/files/u6966522792_a_modern_stainless_steel_mixing_bowl_filled_with__1dee5175-9d58-408f-9316-c7e08b567f99_0.png" alt="Mengen" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+          <h3 class="fresh-dry-process__step-title">Mengen</h3>
+          <p class="fresh-dry-process__step-text">De ingredienten worden gemengd met vitamines en mineralen. Geen kunstmatige toevoegingen.</p>
+        </div>
+        <div class="fresh-dry-process__step">
+          <div class="fresh-dry-process__image"><img src="https://cdn.shopify.com/s/files/1/0925/3879/8410/files/u6966522792_a_slow_drying_chamber_with_trays_of_raw_dog_food__a44c2ed9-4a59-4443-921c-4b0faee1b867_0.png" alt="Langzaam drogen" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+          <h3 class="fresh-dry-process__step-title">Langzaam drogen</h3>
+          <p class="fresh-dry-process__step-text">We drogen op lage temperatuur (40-70&deg;C) zodat vitamines en enzymen behouden blijven.</p>
+        </div>
+        <div class="fresh-dry-process__step">
+          <div class="fresh-dry-process__image"><img src="https://cdn.shopify.com/s/files/1/0925/3879/8410/files/u6966522792_open_resealable_pouch_with_gently_air-dried_dog_f_8121a573-ab24-4095-8198-5c3c518f5270_2.png" alt="Verpakt voor versheid" loading="lazy" style="width:100%;height:100%;object-fit:cover;"></div>
+          <h3 class="fresh-dry-process__step-title">Verpakt voor versheid</h3>
+          <p class="fresh-dry-process__step-text">Direct verpakt in luchtdichte zakken om versheid en smaak te behouden.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       EXPERTS
+       ========================================== -->
+  <section class="fresh-experts" id="experten">
+    <div class="fresh-experts__container">
+      <div class="fresh-experts__header">
+        <h2 class="fb-heading fresh-experts__title">Door experten ontwikkeld</h2>
+        <p class="fresh-experts__subtitle">Samengesteld in samenwerking met dierenartsen en voedingsspecialisten.</p>
+      </div>
+      <div class="fresh-experts__grid">
+        <div class="fresh-experts__card">
+          <div class="fresh-experts__image-wrap"><img src="https://cdn.shopify.com/s/files/1/0925/3879/8410/files/1_3b9699f3-d8ad-423d-8d81-cbfa882df9e4.png" alt="Bram Pauwelyn" style="width:100%;height:100%;object-fit:cover;"></div>
+          <h3 class="fresh-experts__name">Bram Pauwelyn</h3>
+          <p class="fresh-experts__role">Bio-ingenieur</p>
+          <p class="fresh-experts__bio">Als Bio-ingenieur en diervoedingspecialist versterkt hij ons team met zijn expertise en nutritioneel advies.</p>
+        </div>
+        <div class="fresh-experts__card">
+          <div class="fresh-experts__image-wrap"><img src="https://cdn.shopify.com/s/files/1/0925/3879/8410/files/2_092d766d-fef6-46b3-b92a-b9e9a1c926c0.png" alt="Thalita Daling" style="width:100%;height:100%;object-fit:cover;"></div>
+          <h3 class="fresh-experts__name">Thalita Daling</h3>
+          <p class="fresh-experts__role">Voedingsdeskundige</p>
+          <p class="fresh-experts__bio">Gediplomeerd voedingsdeskundige voor honden. Helpt baasjes met bewuste keuzes in voeding en welzijn.</p>
+        </div>
+        <div class="fresh-experts__card">
+          <div class="fresh-experts__image-wrap"><img src="https://cdn.shopify.com/s/files/1/0925/3879/8410/files/2ffca301-210b-48e7-b961-43b0103f7d97.jpg" alt="Laura Florizoone" style="width:100%;height:100%;object-fit:cover;"></div>
+          <h3 class="fresh-experts__name">Laura Florizoone</h3>
+          <p class="fresh-experts__role">Dierenarts</p>
+          <p class="fresh-experts__bio">Dierenarts in opleiding aan de UGent. Haar wetenschappelijke achtergrond zorgt voor nieuwe inzichten.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       CTA BLOCK
+       ========================================== -->
+  <section class="fresh-quiz-cta" id="aanvragen">
+    <div class="fresh-quiz-cta__container">
+      <div class="fresh-quiz-cta__image-wrapper">
+        <img
+          src="https://cdn.shopify.com/s/files/1/0925/3879/8410/files/Ontwerp_zonder_titel_-_2025-10-13T163212.816.png"
+          alt="Fresh Bob hondenvoer"
+          loading="lazy"
+        >
+      </div>
+      <h2 class="fb-heading fresh-quiz-cta__title">Wil jij als eerste ons hondenvoer uitproberen?</h2>
+      <p class="fresh-quiz-cta__subtitle">Laat je e-mailadres achter en ontvang exclusieve early access.</p>
+      <ul class="fresh-quiz-cta__checks">
+        <li class="fresh-quiz-cta__check">&#10003; Als eerste op de hoogte</li>
+        <li class="fresh-quiz-cta__check">&#10003; Exclusieve early access</li>
+        <li class="fresh-quiz-cta__check">&#10003; Geen spam, beloofd</li>
+      </ul>
+      <form class="fresh-quiz-cta__form" id="signupForm">
+        <div class="fresh-quiz-cta__input-wrapper">
+          <input type="email" class="fresh-quiz-cta__input" id="signupEmail" placeholder="Je e-mailadres" required>
+          <p class="fresh-quiz-cta__error" id="signupError"></p>
+        </div>
+        <button type="submit" class="push-btn" id="signupBtn" style="width:100%;">
+          <span class="push-btn__surface">Schrijf je in</span>
+        </button>
+      </form>
+      <div class="fresh-quiz-cta__success" id="signupSuccess">
+        <div class="fresh-quiz-cta__success-icon">&#127881;</div>
+        <h3 class="fresh-quiz-cta__success-title">Je bent aangemeld!</h3>
+        <p class="fresh-quiz-cta__success-text">We houden je op de hoogte. Zodra we lanceren, ben jij de eerste die het weet.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FAQ SECTION
+       ========================================== -->
+  <section class="fresh-faq" id="faq">
+    <div class="fresh-faq__container">
+      <div class="fresh-faq__header">
+        <h2 class="fb-heading fresh-faq__title">Veelgestelde vragen</h2>
+        <p class="fresh-faq__subtitle">Hier vind je antwoorden op de meest gestelde vragen.</p>
+      </div>
+      <ul class="fresh-faq__list">
+        <li class="fresh-faq__item">
+          <button type="button" class="fresh-faq__question" aria-expanded="false">
+            <span>Wat is Fresh Bob precies?</span>
+            <span class="fresh-faq__chevron"><svg viewBox="0 0 16 16" fill="none"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="fresh-faq__answer">Fresh Bob is gepersonaliseerd hondenvoer, vers bereid met 100% natuurlijke ingredi&euml;nten. Geen brokken uit een fabriek, maar echt eten &ndash; afgestemd op jouw hond.</div>
+        </li>
+        <li class="fresh-faq__item">
+          <button type="button" class="fresh-faq__question" aria-expanded="false">
+            <span>Wanneer kan ik bestellen?</span>
+            <span class="fresh-faq__chevron"><svg viewBox="0 0 16 16" fill="none"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="fresh-faq__answer">We lanceren binnenkort! Schrijf je in voor early access en je bent als eerste op de hoogte zodra we live gaan.</div>
+        </li>
+        <li class="fresh-faq__item">
+          <button type="button" class="fresh-faq__question" aria-expanded="false">
+            <span>Wat maakt jullie anders dan gewone brokken?</span>
+            <span class="fresh-faq__chevron"><svg viewBox="0 0 16 16" fill="none"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="fresh-faq__answer">Gewone brokken worden verhit op extreem hoge temperaturen, waardoor veel voedingsstoffen verloren gaan. Wij gebruiken een uniek gentle-dry proces dat de smaak en voedingswaarde behoudt &ndash; zonder koelkast.</div>
+        </li>
+        <li class="fresh-faq__item">
+          <button type="button" class="fresh-faq__question" aria-expanded="false">
+            <span>Hoe werkt de personalisatie?</span>
+            <span class="fresh-faq__chevron"><svg viewBox="0 0 16 16" fill="none"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="fresh-faq__answer">Bij de lancering doorloop je een korte quiz over je hond &ndash; gewicht, leeftijd, activiteitsniveau en eventuele allergie&euml;n. Op basis daarvan stellen we het perfecte voedingsplan samen.</div>
+        </li>
+        <li class="fresh-faq__item">
+          <button type="button" class="fresh-faq__question" aria-expanded="false">
+            <span>Hoe wordt het voer gemaakt?</span>
+            <span class="fresh-faq__chevron"><svg viewBox="0 0 16 16" fill="none"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="fresh-faq__answer">Ons voer wordt zacht gedroogd bij lage temperatuur om voedingsstoffen te behouden. Het is gemaakt met 100% natuurlijke ingredi&euml;nten &ndash; geen bewaarmiddelen, kunstmatige toevoegingen of suiker.</div>
+        </li>
+        <li class="fresh-faq__item">
+          <button type="button" class="fresh-faq__question" aria-expanded="false">
+            <span>Is dit ontwikkeld door experts?</span>
+            <span class="fresh-faq__chevron"><svg viewBox="0 0 16 16" fill="none"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          </button>
+          <div class="fresh-faq__answer">Ja. Ons recept is samengesteld in samenwerking met dierenartsen en voedingsspecialisten. Veilig, voedzaam en perfect uitgebalanceerd, zelfs voor gevoelige honden.</div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ==========================================
+       FLOATING CTA BUTTON
+       ========================================== -->
+  <div class="floating-button-container" id="floatingButton">
+    <a href="#aanvragen" class="push-btn" id="floatingBtn">
+      <span class="push-btn__surface">Schrijf je in voor early access</span>
+    </a>
+  </div>
+
+  <!-- ==========================================
+       JAVASCRIPT
+       ========================================== -->
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+
+      // ── Config ──
+      var KLAVIYO_COMPANY_ID = 'UEFddF';
+      var KLAVIYO_LIST_ID = 'XybHHZ';
+
+      // 1. Influencer personalisatie via URL param
+      var params = new URLSearchParams(window.location.search);
+      var influencer = params.get('influencer');
+
+      if (influencer) {
+        var nameEl = document.getElementById('influencerName');
+        if (nameEl) nameEl.textContent = influencer;
+      }
+
+      // 2. E-mail signup form → Klaviyo
+      var form = document.getElementById('signupForm');
+      var emailInput = document.getElementById('signupEmail');
+      var errorEl = document.getElementById('signupError');
+      var successEl = document.getElementById('signupSuccess');
+      var submitBtn = document.getElementById('signupBtn');
+
+      if (form) {
+        form.addEventListener('submit', function(e) {
+          e.preventDefault();
+          var email = emailInput.value.trim();
+
+          // Reset error
+          errorEl.style.display = 'none';
+          errorEl.textContent = '';
+
+          // Validate
+          if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+            errorEl.textContent = 'Vul een geldig e-mailadres in.';
+            errorEl.style.display = 'block';
+            return;
+          }
+
+          // Loading state
+          submitBtn.disabled = true;
+          submitBtn.querySelector('.push-btn__surface').textContent = 'Even geduld...';
+
+          // Build profile properties
+          var profileProps = {};
+          if (influencer) profileProps.influencer = influencer;
+
+          var payload = {
+            data: {
+              type: 'subscription',
+              attributes: {
+                custom_source: 'Influencer Landing Page',
+                profile: {
+                  data: {
+                    type: 'profile',
+                    attributes: {
+                      email: email,
+                      properties: profileProps
+                    }
+                  }
+                }
+              },
+              relationships: {
+                list: {
+                  data: { type: 'list', id: KLAVIYO_LIST_ID }
+                }
+              }
+            }
+          };
+
+          fetch('https://a.klaviyo.com/client/subscriptions/?company_id=' + KLAVIYO_COMPANY_ID, {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+              'revision': '2024-02-15'
+            },
+            body: JSON.stringify(payload)
+          })
+          .then(function(res) {
+            if (res.ok || res.status === 202) {
+              // Success — hide form, show success message
+              form.style.display = 'none';
+              successEl.style.display = 'block';
+            } else {
+              throw new Error('Status ' + res.status);
+            }
+          })
+          .catch(function() {
+            errorEl.textContent = 'Er ging iets mis. Probeer het opnieuw.';
+            errorEl.style.display = 'block';
+            submitBtn.disabled = false;
+            submitBtn.querySelector('.push-btn__surface').textContent = 'Schrijf je in';
+          });
+        });
+      }
+
+      // 3. Smooth scroll for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach(function(link) {
+        link.addEventListener('click', function(e) {
+          var target = document.querySelector(link.getAttribute('href'));
+          if (target) {
+            e.preventDefault();
+            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }
+        });
+      });
+
+      // 4. FAQ accordion
+      var faqQuestions = document.querySelectorAll('.fresh-faq__question');
+      faqQuestions.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          var item = btn.closest('.fresh-faq__item');
+          var isOpen = item.classList.contains('is-open');
+          item.classList.toggle('is-open', !isOpen);
+          btn.setAttribute('aria-expanded', !isOpen);
+        });
+      });
+
+      // 5. Video autoplay on scroll (IntersectionObserver)
+      var videos = document.querySelectorAll('.fresh-taste-test__video-item video');
+      if ('IntersectionObserver' in window) {
+        var videoObserver = new IntersectionObserver(function(entries) {
+          entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+              entry.target.play();
+            } else {
+              entry.target.pause();
+            }
+          });
+        }, { threshold: 0.3 });
+        videos.forEach(function(v) { videoObserver.observe(v); });
+      }
+
+      // 6. Floating button visibility on scroll
+      var floatingButton = document.getElementById('floatingButton');
+      var scrollThreshold = 600;
+
+      function updateButtonVisibility() {
+        if (window.scrollY > scrollThreshold) {
+          floatingButton.classList.add('visible');
+        } else {
+          floatingButton.classList.remove('visible');
+        }
+      }
+
+      updateButtonVisibility();
+      window.addEventListener('scroll', updateButtonVisibility);
+    });
+  </script>
+</body>
+</html>
